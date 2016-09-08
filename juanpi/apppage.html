@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="卷皮折扣,品牌折扣,折扣,特卖,打折,9.9元包邮,卷皮网" name="keywords">
+    <meta content="卷皮折扣汇聚全网最优质折扣商品，每日精选千款超值折扣商品9.9元起全场包邮1折特卖，每天10点限时秒杀！上卷皮购便宜！" name="description">
+    <title>卷皮官网-专注独家折扣,1折特卖,全场包邮 - 上卷皮 购便宜!</title>
+    <link rel="stylesheet" type="text/css" href="css/apppage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/apppage.js"></script>
+    <script src="js/jquery.fullPage.min1.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+</head>
+<body>
+<script>
+    window.onload=function () {
+        $("#dowebok").fullpage({
+            slidesColor: ['#ffdaea', '#fee4a9', '#9aebd3', '#86dfe3'],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            navigation: true
+        });
+        var showArr=$(".codeshow");
+        if($("#page1:only-child").css("background","#fff")){
+            $(showArr[0]).fadeIn("60000");
+            $(showArr[1]).css("display","none");
+            $(showArr[2]).css("display","none");
+            $(showArr[3]).css("display","none");
+       }
+        if($("#page2:only-child").css("background","#fff")){
+            $(showArr[0]).fadeOut("60000");
+            $(showArr[1]).fadeIn("60000");
+            $(showArr[2]).css("display","none");
+            $(showArr[3]).css("display","none");
+        }
+        if($("#page3:only-child").css("background","#fff")){
+            $(showArr[0]).css("display","none");
+            $(showArr[3]).css("display","none");
+            $(showArr[1]).fadeOut("60000");
+            $(showArr[2]).fadeIn("60000");
+        }
+        if($("#page4:only-child").css("background","#fff")){
+            $(showArr[0]).css("display","none");
+            $(showArr[1]).css("display","none");
+            $(showArr[2]).fadeOut("60000");
+            $(showArr[3]).fadeIn("60000");
+        }
+    }
+</script>
+<div class="header">
+    <h1>卷皮</h1>
+    <ul>
+        <li><a class="rob" href="#"></a></li>
+        <li><a class="bargain" href="#"></a> </li>
+        <li><a class="quality" href="#"></a> </li>
+    </ul>
+</div>
+<div class="card">
+    <div class="codeshow codeshow1">
+
+    </div>
+    <div class="codeshow codeshow2">
+
+    </div>
+    <div class="codeshow codeshow3">
+
+    </div>
+    <div class="codeshow codeshow4">
+
+    </div>
+    <img src="images/2345_image_file_copy_18.jpg"/>
+    <!--<span>手机扫描二维码下载</span>-->
+    <i>立即下载<b></b></i>
+</div>
+<div id="dowebok">
+    <div class="section">
+        <img src="images/2345_image_file_copy_17.jpg"/>
+    </div>
+    <div class="section">
+        <img src="images/2345_image_file_copy_19.jpg"/>
+    </div>
+    <div class="section">
+        <img src="images/2345_image_file_copy_20.jpg"/>
+    </div>
+    <div class="section">
+        <img src="images/2345_image_file_copy_21.jpg"/>
+    </div>
+</div>
+</body>
+</html>

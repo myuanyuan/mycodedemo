@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body,dl,dt,dd,ul,li,ol,p,h1,h2,h3,h4,h5,fieldset,legend{margin:0;padding:0;}
+body{font:12px/24px "微软雅黑";color:#333;
+    background: #eeeeee;}
+a{text-decoration:none; color:#333;cursor:pointer;}
+a:hover{text-decoration:underline; color:#333;}
+ul,li{list-style:none;}
+img{border:none;display:block;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+.left{float:left;}
+.noborder{border:none;}
+.clear{clear:both;height: 0;}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:95px;
+    background: #ffffff;
+    z-index: 20;
+    border-bottom:2px solid #ff464e;
+}
+.section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header ul{
+    float: left;
+    margin:28px 0px 0px 320px;
+}
+.header li{
+    float: left;
+}
+.header li a{
+    float: left;
+    width:155px;
+    height:32px;
+
+}
+.rob{background:url("../images/header-total.gif") no-repeat 0 0;}
+.bargain{background:url("../images/header-total.gif") no-repeat -155px 0px;}
+.quality{background:url("../images/header-total.gif") no-repeat -310px 0px;}
+.header h1{
+    float: left;
+    text-indent:-9999px;
+    width:196px;
+    height:45px;
+    margin:20px 42px;
+    background: url("../images/header-total.gif") no-repeat -81px  -161px;
+}
+
+.section {
+    position: relative;
+}
+.section img{
+    display: block;
+    position: absolute;
+    top:238px;
+    left:170px;
+}
+.codeshow{
+    position: absolute;
+    width:385px;
+    height:70px;
+    top:-110px;
+    left:-73px;
+}
+.codeshow1{
+    background: url("../images/mobile-txt.png") no-repeat -60px -398px;
+}
+.codeshow2{
+    background: url("../images/mobile-txt.png") no-repeat -60px -476px;
+    display: none;
+}
+.codeshow3{
+    background: url("../images/mobile-txt.png") no-repeat -60px -557px;
+    display: none;
+}
+.codeshow4{
+    background: url("../images/mobile-txt.png") no-repeat -60px -633px;
+    display: none;
+}
+.card{
+    position: fixed;
+    top:398px;
+    left:805px;
+    box-shadow: #666666 3px;
+    z-index: 10;
+}
+.card i{
+    position: absolute;
+    top:248px;
+    left:45px;
+    width:143px;
+    height:48px;
+    line-height:48px;
+    padding-left:27px;
+    /*text-align: center;*/
+    color: #ffffff;
+    font-size:20px;
+    background: #ee105a;
+    border-radius: 3px;
+}
+.card i b{
+    display: block;
+    width:42px;
+    height:42px;
+    background: url("../images/");
+}

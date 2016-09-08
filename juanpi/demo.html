@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.0.0.js"></script>
+    <!--<script src="js/lunfan.js"></script>-->
+    <script src="js/轮番tuw.js"></script>
+    <style>
+        input{
+            float: right;
+        }
+        .box{
+            position: relative;
+        }
+        li{
+            list-style: none;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .banner1{
+            z-index: 1;
+        }
+        .banner4{
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="banner-img">
+            <li class="banner1"><a href="#"><img src="images/pro_0001.jpg"/> </a></li>
+            <li class="banner2"><a href="#"><img src="images/pro_0002.jpg"/> </a></li>
+            <li class="banner3"><a href="#"><img src="images/pro_0001.jpg"/> </a></li>
+            <li class="banner4"><a href="#"><img src="images/pro_0002.jpg"/> </a></li>
+        </ul>
+    </div>
+    <input type="text" placeholder="hello">
+<!--<script>
+    $('.box').imgtransition({
+        speed:3000,  //图片切换时间
+        animate:1000 //图片切换过渡时间
+    });
+</script>-->
+</body>
+</html>
